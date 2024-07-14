@@ -43,13 +43,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        getAllNotes()  // Refresh notes list when activity resumes
+        //Refresh notes list when activity resumes
+        getAllNotes()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK) {
-            getAllNotes()  // Refresh notes list when returning from AddActivity or UpdateActivity
+            //Refresh notes list when returning from AddActivity or UpdateActivity
+            getAllNotes()
         }
     }
 
