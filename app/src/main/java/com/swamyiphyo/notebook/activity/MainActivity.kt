@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         if (resultCode == Activity.RESULT_OK) {
             //Refresh notes list when returning from AddActivity or UpdateActivity
             getAllNotes()
+            recreate()
         }
     }
 
